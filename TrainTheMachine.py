@@ -25,7 +25,7 @@ INIT_LR = 1e-4
 EPOCHS = 20
 BS = 32
 
-DIRECTORY = r"D:\KhairilNajimi\Lecture Notes\SEM6\Soft Comp\Indv Project\Face Mask\Face-Mask-Detection-master\dataset"
+DIRECTORY = r"D:\KhairilNajimi\Lecture Notes\SEM6\Soft Comp\Indv Project\Face Mask\FaceMaskDetection\dataset"
 CATEGORIES = ["with_mask", "without_mask"]
 
 # grab the list of images in our dataset directory, then initialize the list of data (i.e., images) and class images

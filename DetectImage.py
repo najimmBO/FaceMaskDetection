@@ -1,4 +1,4 @@
-# --image images/pic1.jpeg
+# python DetectImage.py --image input/Khairil.jpg
 
 # import necessary packages 
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
@@ -78,7 +78,7 @@ def mask_image():
 
 			# determine the class label and color we'll use to draw the bounding box and text
 			label = "Mask On This Person" if mask > withoutMask else "No Mask On This Person"
-			color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
+			color = (0, 0, 255) if label == "Mask" else (0, 255, 0)
 
 			# include the probability in the label
 			label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
